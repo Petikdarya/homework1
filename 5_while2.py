@@ -14,14 +14,20 @@
     Программа: Программирую
     
 """
+answers={
+    'привет': 'И тебе привет!',
+    'как дела': 'Лучше всех',
+    'что делаешь': 'разговариваю с тобой'
+    }
 
-questions_and_answers = {}
+def ask_user():
+  while True:
+    z = input('Ваш вопрос')
+    if answers.get(z):
+      print(answers[z])
+  
 
-def ask_user(answers_dict):
-    """
-    Замените pass на ваш код
-    """
-    pass
     
+
 if __name__ == "__main__":
-    ask_user(questions_and_answers)
+  ask_user()

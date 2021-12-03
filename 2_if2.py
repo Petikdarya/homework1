@@ -14,13 +14,27 @@
   и выводя на экран результаты
 
 """
+def strok(a,b):
+      x = isinstance(a, str)
+      y = isinstance(b, str)
+      z = len(a)
+      p = len(b)
+      if not x or not y:
+        return '0'
+      elif a == b:
+        return '1'
+      elif z > p:
+        return '2'
+      elif b=='learn':
+        return '3'
 
 def main():
     """
     Эта функция вызывается автоматически при запуске скрипта в консоли
     В ней надо заменить pass на ваш код
     """
-    pass
+    
+    print(strok('пока', 'пока'))
     
 if __name__ == "__main__":
     main()
